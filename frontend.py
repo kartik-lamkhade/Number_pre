@@ -127,7 +127,7 @@ if canvas_result.image_data is not None:
         buf.seek(0)
         byte_data = buf.read()
         files = {'image': ('canvas.png', byte_data, 'image/png')}
-        response = requests.post("https://number-pre.onrender.com", files=files)
+        response = requests.post("https://number-pre.onrender.com/predict", files=files)
         if response.status_code == 200:
             result = response.json()
             st.success(f"Predicted Digit: {result['predicted_digit']}    \nConfidence: {result['confidence']*10:.2f}%")
