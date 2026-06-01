@@ -6,4 +6,3 @@ fastapi
 uvicorn
 streamlit_drawable_canvas
 torch==2.2.2+cpu
---extra-index-url https://download.pytorch.org/whl/cpu
