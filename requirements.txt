@@ -2,5 +2,6 @@ streamlit
 fastapi
 requests
 Pillow
+torch==2.2.2+cpu
 numpy
 streamlit-drawable-canvas
